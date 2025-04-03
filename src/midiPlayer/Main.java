@@ -21,7 +21,7 @@ public class Main {
 			Sequence sequence = new Sequence ( Sequence.PPQ, 384 ) ;
 			Track track = sequence.createTrack ( ) ;
 
-			//MidiEventFactoryAbstract factoryAbstract = new StandardMidiEventFactoryAbstract ( ) ;
+			MidiEventFactoryAbstract factoryAbstract = new StandardMidiEventFactoryAbstract ( ) ;
 			//MidiEventFactoryAbstract factoryAbstract  = new LegatoMidiEventFactoryAbstract ( ) ;
 			//MidiEventFactoryAbstract factoryAbstract = new LegatoMidiEventFactoryAbstract ( ) ;
 
