@@ -3,6 +3,7 @@ package csvParser;
 import java.util.List;
 import javax.sound.midi.*;
 
+import factories.LegatoMidiEventFactoryAbstract;
 import factories.MidiEventFactory;
 
 public class Main {
@@ -21,7 +22,7 @@ public class Main {
 
 			//MidiEventFactoryAbstract factoryAbstract = new StandardMidiEventFactoryAbstract ( ) ;
 			LegatoMidiEventFactoryAbstract MidiEventFactoryAbstractfactoryAbstract = new LegatoMidiEventFactoryAbstract ( ) ;
-			MidiEventFactoryAbstractfactoryAbstract = new StaccatoMidiEventFactoryAbstract ( ) ;
+			MidiEventFactoryAbstractfactoryAbstract = new LegatoMidiEventFactoryAbstract ( ) ;
 
 			MidiEventFactory factory = factoryAbstract.createFactory ( ) ;
 
