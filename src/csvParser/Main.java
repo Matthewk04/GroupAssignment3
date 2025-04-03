@@ -5,6 +5,7 @@ import javax.sound.midi.*;
 
 import factories.LegatoMidiEventFactoryAbstract;
 import factories.MidiEventFactory;
+import factories.factoryAbstract;
 
 public class Main {
 	public static void main ( String [ ] args ) {
