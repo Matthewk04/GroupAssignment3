@@ -18,7 +18,7 @@ public class Main {
 			Track track = sequence.createTrack ( ) ;
 
 			//MidiEventFactoryAbstract factoryAbstract = new StandardMidiEventFactoryAbstract ( ) ;
-			MidiEventFactoryAbstractfactoryAbstract = new LegatoMidiEventFactoryAbstract ( ) ;
+			LegatoMidiEventFactoryAbstract MidiEventFactoryAbstractfactoryAbstract = new LegatoMidiEventFactoryAbstract ( ) ;
 			MidiEventFactoryAbstractfactoryAbstract = new StaccatoMidiEventFactoryAbstract ( ) ;
 
 			MidiEventFactory factory = factoryAbstract.createFactory ( ) ;
