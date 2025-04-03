@@ -1,3 +1,6 @@
+// THE SONG IS BAD GUY BY BILLY ILISH
+
+
 package csvParser;
 
 import java.util.List;
@@ -5,6 +8,7 @@ import javax.sound.midi.*;
 
 import factories.LegatoMidiEventFactoryAbstract;
 import factories.MidiEventFactory;
+import factories.StandardMidiEventFactoryAbstract;
 import factories.factoryAbstract;
 
 public class Main {
@@ -21,7 +25,7 @@ public class Main {
 			Sequence sequence = new Sequence ( Sequence.PPQ, 384 ) ;
 			Track track = sequence.createTrack ( ) ;
 
-			//MidiEventFactoryAbstract factoryAbstract = new StandardMidiEventFactoryAbstract ( ) ;
+			StandardMidiEventFactoryAbstract factoryAbstract = new StandardMidiEventFactoryAbstract ( ) ;
 			LegatoMidiEventFactoryAbstract MidiEventFactoryAbstractfactoryAbstract = new LegatoMidiEventFactoryAbstract ( ) ;
 			MidiEventFactoryAbstractfactoryAbstract = new LegatoMidiEventFactoryAbstract ( ) ;
 
