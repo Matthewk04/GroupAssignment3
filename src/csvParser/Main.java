@@ -35,7 +35,7 @@ public class Main {
 
 			// Choose a pitch strategy ( e.g. , HigherPitch ,LowerPitch )
 			PitchStrategy pitchStrategy = new HigherPitchStrategy ( );
-			for (MidiEventData event:midiEvents ) {
+			for (MidiEventData event:events ) {
 				int modifiedNote = pitchStrategy.modifyPitch ( event.getNote ( ) ) ;
 
 				// call this as much as you want if you want to get a higher pitch
