@@ -6,7 +6,7 @@
  * 
  */
 
-package csvParser;
+package midiPlayer;
 
 import javax.sound.midi.*;
 

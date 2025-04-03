@@ -1,7 +1,7 @@
 /**
  * 
  */
-package csvParser;
+package midiPlayer;
 
 /**
  * Interface for pitch modification strategies.

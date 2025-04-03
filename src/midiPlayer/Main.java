@@ -3,33 +3,27 @@
  */
 
 
-package csvParser;
+package midiPlayer;
 
 import java.util.List;
 import javax.sound.midi.*;
 
-import factories.LegatoMidiEventFactoryAbstract;
-import factories.MidiEventFactory;
-import factories.StandardMidiEventFactoryAbstract;
-import factories.factoryAbstract;
+import csvParser.MidiCsvParser;
+import csvParser.MidiEventData;
+import factories.*;
 
 public class Main {
 	public static void main ( String [ ] args ) {
 		try {
 			List <MidiEventData> events = MidiCsvParser.parseCsv ("src/files/mysterysong.csv") ;
 			
-			System.out.println("Midi events:");
-			for(MidiEventData event:events) {
-				System.out.println(event);
-			}
-			
 			
 			Sequence sequence = new Sequence ( Sequence.PPQ, 384 ) ;
 			Track track = sequence.createTrack ( ) ;
 
-			StandardMidiEventFactoryAbstract factoryAbstract = new StandardMidiEventFactoryAbstract ( ) ;
-			LegatoMidiEventFactoryAbstract MidiEventFactoryAbstractfactoryAbstract = new LegatoMidiEventFactoryAbstract ( ) ;
-			MidiEventFactoryAbstractfactoryAbstract = new LegatoMidiEventFactoryAbstract ( ) ;
+			//MidiEventFactoryAbstract factoryAbstract = new StandardMidiEventFactoryAbstract ( ) ;
+			//MidiEventFactoryAbstract factoryAbstract  = new LegatoMidiEventFactoryAbstract ( ) ;
+			//MidiEventFactoryAbstract factoryAbstract = new LegatoMidiEventFactoryAbstract ( ) ;
 
 			MidiEventFactory factory = factoryAbstract.createFactory ( ) ;
 

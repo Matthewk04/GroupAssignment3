@@ -70,9 +70,5 @@ public class MidiEventData {
 		this.instrument = instrument;
 	}
 	
-	@Override
-	public String toString() {
-	    return ("Tick: " + startEndTick + " | On Off: " + noteOnOff + " | Channel: " + channel + " | Note: " + note + " | Velocity: " + velocity + " | Instrument: " + instrument);
-	}
 
 }
