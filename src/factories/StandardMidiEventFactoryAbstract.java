@@ -4,8 +4,7 @@ public class StandardMidiEventFactoryAbstract implements MidiEventFactoryAbstrac
 
 	@Override
 	public MidiEventFactory createFactory() {
-		// TODO Auto-generated method stub
-		return null;
+		return new StandardMidiEventFactory();
 	}
 
 }

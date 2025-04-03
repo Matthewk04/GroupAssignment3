@@ -9,6 +9,13 @@ import java.util.List;
 import javax.sound.midi.ShortMessage;
 
 public class MidiCsvParser {
+	/**
+	 * Reads a csv file and creates a list of MidiEventData objects
+	 * 
+	 * @param file mysterysong.csv file path
+	 * @return List of midi events
+	 * @throws IOException if there is an error reading the file
+	 */
 	public static List<MidiEventData> parseCsv(String file) throws IOException {
 		List<MidiEventData> events = new ArrayList<>();
 		try (BufferedReader br = new BufferedReader(new FileReader(file))) {

@@ -5,6 +5,14 @@ public class MidiEventData {
 
 	private int instrument;
 	
+	/**
+	 * @param startEndTick		
+	 * @param velocity			velocity of the note
+	 * @param note				midi note
+	 * @param channel			midi channel
+	 * @param instrument		instrument number
+	 * @param noteOnOff			
+	 */
 	public MidiEventData(int startEndTick, int velocity, int note, int channel, int instrument, int noteOnOff) {
 		this.startEndTick = startEndTick;
 		this.velocity = velocity;

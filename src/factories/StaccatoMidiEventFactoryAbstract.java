@@ -4,8 +4,7 @@ public class StaccatoMidiEventFactoryAbstract implements MidiEventFactoryAbstrac
 
 	@Override
 	public MidiEventFactory createFactory() {
-		// TODO Auto-generated method stub
-		return null;
+		return new StaccatoMidiEventFactory();
 	}
 
 }
