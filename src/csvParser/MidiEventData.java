@@ -61,5 +61,10 @@ public class MidiEventData {
 	public void setInstrument(int instrument) {
 		this.instrument = instrument;
 	}
+	
+	@Override
+	public String toString() {
+	    return ("Tick: " + startEndTick + " | On Off: " + noteOnOff + " | Channel: " + channel + " | Note: " + note + " | Velocity: " + velocity + " | Instrument: " + instrument);
+	}
 
 }
