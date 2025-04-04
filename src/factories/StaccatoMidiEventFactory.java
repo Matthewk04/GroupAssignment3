@@ -17,7 +17,7 @@ public class StaccatoMidiEventFactory implements MidiEventFactory {
 	}
 
 	/**
-	 *Increases note_off by 80 ticks
+	 *Increases note_off by 120 ticks
 	 */
 	@Override
 	public MidiEvent createNoteOff(int tick, int note, int channel) throws InvalidMidiDataException {

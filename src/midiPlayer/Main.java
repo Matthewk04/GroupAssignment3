@@ -23,7 +23,7 @@ public class Main {
 
 			MidiEventFactoryAbstract factoryAbstract = new StandardMidiEventFactoryAbstract ( ) ;
 			//MidiEventFactoryAbstract factoryAbstract  = new LegatoMidiEventFactoryAbstract ( ) ;
-			//MidiEventFactoryAbstract factoryAbstract = new LegatoMidiEventFactoryAbstract ( ) ;
+			//MidiEventFactoryAbstract factoryAbstract = new StaccatoMidiEventFactoryAbstract ( ) ;
 
 			MidiEventFactory factory = factoryAbstract.createFactory ( ) ;
 
